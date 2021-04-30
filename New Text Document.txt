@@ -1,1 +1,3 @@
 jhipster import-jdl --inline "application {config { baseName oauth2, authenticationType oauth2,buildTool gradle, testFrameworks [protractor] }}"
+
+docker-compose -f src/main/docker/keycloak.yml up -d
